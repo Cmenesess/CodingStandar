@@ -11,7 +11,20 @@ The present configuration file is proof we performed the coding standards worksh
 -->
 <module name="Checker">
   <property name="severity" value="warning"/>
+  <module name="Header">
+  	<property name="header" value="// Copyright (C) 2020\n// All rights reserved"/>
+  </module>
   <module name="TreeWalker">
+  	<module name="LocalVariableName">
+  		<property name="format" value="^[a-z](_?[a-zA-Z0-9]+)*$"/>
+  	</module>
+  	<module name="MissingJavadocMethod">
+  		<property name="scope" value="private"/>
+  		<property name="allowMissingPropertyJavadoc" value="true"/>
+  	</module>
+  	<module name="JavadocType">
+  		<property name="authorFormat" value="\S"/>
+  	</module>
     <module name="JavadocMethod"/>
     <module name="MethodName">
     	<property name="format" value="^[a-z][\w]*$" />
