@@ -51,7 +51,7 @@ public class Calculator {
         }
 
         Calculator cal=new Calculator();
-        String result=cal.operation(First, second, operator);
+        String result=cal.operation(first, second, operator);
 
         System.out.printf(result);
 		reader.close();
